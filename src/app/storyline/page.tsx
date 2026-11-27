@@ -1,0 +1,2 @@
+import PortfolioSection from "@/components/PortfolioSection";
+export default function Storyline(){return <PortfolioSection eyebrow="Collection narratives / 09" title="Stories in every stitch." description="The ideas, cultural references and narratives woven through each collection."/>;}
