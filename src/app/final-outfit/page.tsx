@@ -1,0 +1,2 @@
+import PortfolioSection from "@/components/PortfolioSection";
+export default function FinalOutfit(){return <PortfolioSection eyebrow="Finished works / 08" title="The final form." description="A gallery of completed Indo-Western looks, craftsmanship and considered finishing."/>;}
