@@ -1,0 +1,2 @@
+import PortfolioSection from "@/components/PortfolioSection";
+export default function MoodBoard(){return <PortfolioSection eyebrow="Visual research / 04" title="Mood board." description="Atmosphere, references and visual worlds that shape each collection."/>;}
