@@ -1,0 +1,2 @@
+import PortfolioSection from "@/components/PortfolioSection";
+export default function Lookboard(){return <PortfolioSection eyebrow="Styling studies / 05" title="The lookboard." description="A considered edit of silhouettes, styling directions and the details that bring a look together."/>;}
