@@ -1,0 +1,2 @@
+import PortfolioSection from "@/components/PortfolioSection";
+export default function ColourBoard(){return <PortfolioSection eyebrow="Colour stories / 06" title="Colour, composed." description="A palette archive of tonal explorations, material references and Pantone studies."/>;}
