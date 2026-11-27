@@ -19,3 +19,49 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-rule { border-top: 1px solid rgba(36,33,30,.2); }
 @media (max-width: 640px) { .eyebrow { letter-spacing: .18em; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+/* ARSHU runway concept */
+.runway-page { isolation: isolate; }
+.runway-stage { background: linear-gradient(180deg, #d9d0c2 0%, #e8dfd2 55%, #b9aa96 100%); }
+.stage-ceiling { position:absolute; inset:0 0 auto; height:42%; background:linear-gradient(180deg,rgba(255,250,241,.88),rgba(255,250,241,0)); }
+.stage-halo { position:absolute; width:70%; height:70%; left:15%; top:-12%; border-radius:50%; background:radial-gradient(ellipse,rgba(255,250,239,.92),rgba(255,250,239,0) 68%); }
+.stage-portal { position:absolute; top:12%; height:53%; width:18%; border:1px solid rgba(255,250,241,.55); border-bottom:0; border-radius:50% 50% 0 0; box-shadow:inset 0 0 38px rgba(255,250,241,.24),0 0 30px rgba(255,250,241,.15); }
+.stage-portal--left { left:8%; }
+.stage-portal--right { right:8%; transform:scale(.82); transform-origin:bottom; }
+.stage-floor { position:absolute; left:-10%; right:-10%; bottom:-20%; height:57%; background:linear-gradient(180deg,rgba(255,250,241,.1),rgba(105,88,67,.28)); clip-path:polygon(38% 0,62% 0,100% 100%,0 100%); }
+.stage-centerline { position:absolute; left:50%; top:35%; bottom:0; width:1px; background:linear-gradient(180deg,rgba(255,250,241,.65),rgba(255,250,241,0)); }
+.stage-caption { position:absolute; z-index:5; left:24px; right:24px; display:flex; justify-content:space-between; gap:12px; font-size:8px; letter-spacing:.2em; color:rgba(67,55,42,.62); }
+.stage-caption--top { top:22px; }
+.stage-caption--bottom { bottom:20px; color:rgba(255,250,241,.76); }
+.stage-light { position:absolute; top:0; width:22%; height:58%; background:linear-gradient(180deg,rgba(255,250,241,.5),transparent); filter:blur(18px); }
+.stage-light--one { left:18%; transform:rotate(12deg); }
+.stage-light--two { left:39%; opacity:.7; }
+.stage-light--three { right:17%; transform:rotate(-12deg); }
+.stage-title { position:absolute; z-index:4; left:8%; bottom:13%; }
+.stage-model { position:absolute; z-index:3; bottom:12%; filter:drop-shadow(0 18px 15px rgba(75,58,40,.2)); }
+.stage-model--one { left:42%; transform:scale(.9); transform-origin:bottom; animation:runway-walk 5s ease-in-out infinite; }
+.stage-model--two { left:59%; transform:scale(.74); transform-origin:bottom; animation:runway-walk 5s ease-in-out -2.5s infinite; }
+.runway-figure { position:relative; width:112px; height:330px; }
+.figure-head { position:absolute; z-index:3; top:0; left:43px; width:27px; height:34px; border-radius:48% 48% 45% 45%; background:linear-gradient(90deg,#8d6e55,#c19b79 55%,#8c6b52); }
+.figure-neck { position:absolute; z-index:2; top:29px; left:50px; width:13px; height:22px; background:#aa8464; }
+.figure-body { position:absolute; z-index:2; top:45px; left:28px; width:58px; height:108px; background:linear-gradient(100deg,#8c7157,#d1b89a 48%,#8c7058); clip-path:polygon(32% 0,68% 0,100% 24%,82% 100%,18% 100%,0 24%); }
+.figure-arm { position:absolute; z-index:1; top:55px; width:17px; height:112px; border-radius:12px; background:linear-gradient(90deg,#8a6b52,#c39c7a); transform-origin:top; }
+.figure-arm--left { left:20px; transform:rotate(9deg); }
+.figure-arm--right { right:17px; transform:rotate(-11deg); }
+.figure-skirt { position:absolute; z-index:2; top:132px; left:8px; width:96px; height:176px; background:linear-gradient(100deg,#8b7864,#e4d5c0 48%,#a58c70); clip-path:polygon(27% 0,73% 0,100% 100%,0 100%); }
+.figure-leg { position:absolute; z-index:1; top:276px; width:17px; height:52px; background:linear-gradient(90deg,#87674f,#c09a78); }
+.figure-leg--left { left:38px; transform:rotate(2deg); }
+.figure-leg--right { right:38px; transform:rotate(-3deg); }
+.figure-train { position:absolute; z-index:1; left:-21px; top:170px; width:150px; height:155px; background:linear-gradient(115deg,rgba(247,238,221,.88),rgba(166,139,108,.18)); clip-path:polygon(45% 0,100% 100%,0 78%); opacity:.72; }
+.runway-figure--masculine .figure-body { top:45px; left:26px; width:62px; height:119px; background:linear-gradient(90deg,#55483b,#a18a70 50%,#5e5042); clip-path:polygon(22% 0,78% 0,100% 18%,84% 100%,16% 100%,0 18%); }
+.runway-figure--masculine .figure-skirt { top:150px; left:26px; width:61px; height:144px; background:linear-gradient(90deg,#625445,#b7a58d 50%,#625445); clip-path:polygon(10% 0,90% 0,100% 100%,0 100%); }
+.runway-figure--masculine .figure-train { display:none; }
+.runway-figure--masculine .figure-arm { height:118px; }
+.look-art { position:relative; display:flex; height:410px; align-items:flex-end; justify-content:center; overflow:hidden; background:radial-gradient(ellipse at 50% 30%,#f9f3e9,#d9cbbb 72%,#b8a58f); }
+.look-study--masculine .look-art { background:radial-gradient(ellipse at 50% 30%,#e9e0d2,#c9b9a5 72%,#a18d75); }
+.look-art .runway-figure { transform:scale(1.08); transform-origin:bottom; }
+.look-index { position:absolute; top:22px; left:22px; font-size:8px; letter-spacing:.2em; color:#665746; }
+.look-mark { position:absolute; right:24px; bottom:26px; font-family:Georgia,serif; font-size:26px; line-height:1; font-style:italic; color:rgba(69,55,40,.7); text-align:right; }
+@keyframes runway-walk { 0%,100% { translate:0 0; } 50% { translate:0 -9px; } }
+@media (max-width:640px) { .stage-caption { left:12px; right:12px; font-size:6px; letter-spacing:.12em; } .stage-model--one { left:35%; } .stage-model--two { left:60%; } .runway-figure { transform:scale(.76); transform-origin:bottom center; } .stage-title { left:6%; bottom:14%; } .stage-portal--left { left:0; } .stage-portal--right { right:0; } }
+@media (prefers-reduced-motion:reduce) { .stage-model--one,.stage-model--two { animation:none; } }
