@@ -1,0 +1,2 @@
+import PortfolioSection from "@/components/PortfolioSection";
+export default function ProjectWork(){return <PortfolioSection eyebrow="Selected projects / 10" title="Work in progress." description="A closer look at creative briefs, research, development and finished fashion projects."/>;}
