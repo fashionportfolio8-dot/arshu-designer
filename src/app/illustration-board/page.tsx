@@ -1,0 +1,2 @@
+import PortfolioSection from "@/components/PortfolioSection";
+export default function IllustrationBoard(){return <PortfolioSection eyebrow="The sketchbook / 07" title="Drawn to form." description="Fashion illustrations, silhouette experiments and the evolution from first line to final look."/>;}
